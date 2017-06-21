@@ -1,15 +1,14 @@
-<div class="content">
-      <div class="container">
+     <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <div class="photo text-center">
                     <%= image_tag "/assets/AWozniak-1.jpg" %>
                 </div>
                 <div id="text-header">
-                    <h1>
+                    <h1 class="h-cv">
                         Aleksander Woźniak
                     </h1>
-                    <h2>Student Automatyki i Robotyki @ AGH</h2>
+                    <h2 class="h-cv">Student Automatyki i Robotyki @ AGH</h2>
                 </div>
             </div>
         </div>
@@ -17,7 +16,7 @@
             <div class="col-xs-12 col-sm-7">
                 
                 <div class="box">
-                    <h2>
+                    <h2 class="h-cv">
                         O MNIE
                     </h2>
                     <p> 
@@ -35,7 +34,7 @@
                                 pobierania comiesięcznych opłat za konto w wersji
                                 Pro.
                                 <strong>
-                                    <%= link_to "Adres strony:", 'https://stormy-earth-37856.herokuapp.com/', target: '_blank' %>
+                                    <%= link_to "Odwiedź stronę.", 'https://stormy-earth-37856.herokuapp.com/', target: '_blank' %>
                                 </strong>
                             </p>
                         </li>
@@ -43,7 +42,7 @@
                             <p>
                                 W pełni funkcjonalna aplikacja typu Twitter.
                                 <strong>
-                                   <%= link_to "Adres strony:", 'https://wozniakalex.com', target: '_blank' %>
+                                   <%= link_to "Odwiedź stronę.", 'https://wozniakalex.com', target: '_blank' %>
                                 </strong>
                             </p>
                         </li>
@@ -56,7 +55,7 @@
                 
                 <! DOŚWIADCZENIE >
                 <div class="box">
-                    <h2>Doświadczenie</h2>
+                    <h2 class="h-cv">Doświadczenie</h2>
                     <div class="exp-pozycja clearfix">
                         <div class="col-xs-4">
                             <div class="where">Grenton Smart Home</div>
@@ -105,7 +104,7 @@
                 <! EDUKACJA > 
                 <div class="box">
                     <div class="edu">
-                        <h2>Wykształcenie</h2>
+                        <h2 class="h-cv">Wykształcenie</h2>
                         <ul class="clearfix">
                             <li>
                                 <div class="time">03.2017 - 09.2018</div>
@@ -130,7 +129,12 @@
             <div class="col-xs-12 col-sm-5">
                 <! KONTAKT >
                 <div class="contacts">
-                    <div class="box clearfix well">
+                   <div class="box clearfix well">
+                 <div class="icon pull-left text-center">
+                        <span class="fa fa-address-card fa-fw">
+                        </span>
+                    </div>
+                <h2 class="h-cv">Kontakt</h2>
                         <div class="contact">
                             <div class="icon pull-left text-center">
                                 <span class="fa fa-envelope fa-fw">
@@ -153,7 +157,7 @@
                                 <span class="fa fa-github fa-fw">
                                 </span>
                             </div>
-                            <div class="title only pull-right"> <%= link_to "", 'http://github.com/smilzy', target: '_blank' %> </div>
+                            <div class="title only pull-right"> <%= link_to "Github Profile", 'http://github.com/smilzy', target: '_blank' %> </div>
                         </div>
                     </div>
                 </div>
@@ -165,7 +169,7 @@
                             <span class="fa fa-language fa-fw">
                             </span>
                         </div>
-                        <h2>Umiejętności</h2>
+                        <h2 class="h-cv">Umiejętności</h2>
                         <div class="clearfix">
                             <div class="skillbar clearfix " data-percent="75%">
                             	<div class="skillbar-title"><span>HTML5</span></div>
@@ -196,7 +200,7 @@
                             <span class="fa fa-graduation-cap fa-fw">
                             </span>
                         </div>
-                        <h2>Kursy / szkolenia</h2>
+                        <h2 class="h-cv">Kursy / szkolenia</h2>
                         <div class="clearfix">
                             <ul>
                                 <li>
