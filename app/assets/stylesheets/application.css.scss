@@ -103,7 +103,7 @@ h3:not(.h-cv) {
     }
 }
 
-#slide2, #slide4 {
+#slide2 {
     width: 100%;
     background-color: #fff;
     color: #333333;
@@ -120,6 +120,25 @@ h3:not(.h-cv) {
     height: 100%;
     margin: 0;
     padding: 200px 0 0 0;
+    .blurb {
+        border: 2px solid;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 50px 20px 50px 20px;
+        color: black;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+
+#slide4 {
+    width: 100%;
+    background-color: #fff;
+    color: #333333;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
     .blurb {
         border: 2px solid;
         background-color: #fff;
