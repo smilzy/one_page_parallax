@@ -78,3 +78,41 @@ h3 {
     text-align: left;
     margin: 50px auto;
 }
+
+#slide1 {
+    width: 100%;
+    background: url('ASTRONAUTA.jpg') 50% 0 no-repeat fixed;
+    background-size: cover;
+    height: 600px;
+    margin: 0;
+    padding: 200px 0 260px 0;
+}
+
+#slide2 {
+    width: 100%;
+    background-color: #fff;
+    color: #333333;
+    height: 300px;
+    margin: 0;
+    padding: 200px 0;
+    overflow: hidden;
+}
+
+#slide3 {
+    width: 100%;
+    background: url('Paper.png') 50% 0 no-repeat fixed;
+    background-size: cover;
+    height: 600px;
+    margin: 0;
+    padding: 200px 0 0 0;
+}
+
+#slide4 {
+    width: 100%;
+    background-color: #fff;
+    color: #333333;
+    height: 300px;
+    margin: 0;
+    padding: 200px 0;
+    overflow: hidden;
+}
