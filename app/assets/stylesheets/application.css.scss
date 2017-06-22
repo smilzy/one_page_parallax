@@ -127,8 +127,17 @@ h3:not(.h-cv) {
         padding: 50px 20px 50px 20px;
         color: black;
     }
-    h2 {
+    .well {
+        background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        border: 0px;
+    }
+    h1 {
+        font-family: 'Righteous';
         text-align: center;
+        color: #FFF;
     }
 }
 
@@ -149,4 +158,23 @@ h3:not(.h-cv) {
     h2 {
         text-align: center;
     }
+}
+
+.carousel .item img {
+  max-height: 500px;
+  height: 500px;
+  min-width: auto;
+  width: 100%;
+}
+
+.carousel-indicators .active{
+    background-color: #f00;
+}
+
+.carousel-indicators li{
+    border-color: red;
+}
+
+.carousel-caption {
+   background-color: rgba(96, 96, 96, 0.4);
 }
