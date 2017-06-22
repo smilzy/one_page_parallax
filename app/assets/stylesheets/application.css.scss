@@ -160,7 +160,7 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
     }
 }
 
-.carousel .item img {
+.carousel .item img, .carousel .item a img {
   max-height: 500px;
   height: 500px;
   min-width: auto;
@@ -172,9 +172,9 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
 }
 
 .carousel-indicators li{
-    border-color: red;
+//    border-color: #f00;
 }
 
 .carousel-caption {
-   background-color: rgba(96, 96, 96, 0.4);
+   background-color: rgba(96, 96, 96, 0.65);
 }
