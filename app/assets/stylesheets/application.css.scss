@@ -120,6 +120,23 @@ h3:not(.h-cv) {
     }
 }
 
+// MAŁE EKRANY (telefon HD)
+// @media (max-width: 1850px) {
+//   #slide1 {
+//     padding: 280px 0 100px 0;
+//   }
+// }
+// @media (max-height: 830px) {
+//   #slide1 {
+//     padding: 280px 0 100px 0;
+//   }
+// }
+@media (max-width: 600px) {
+  #slide1 {
+    padding: 300px 0 0px 0;
+  }
+}
+
 #slide2 {
     width: 100%;
     background-color: #fff;
@@ -179,7 +196,7 @@ h3:not(.h-cv) {
     margin: 0;
     z-index: 4;
     position: relative;
-    padding: 100px 0 100px 0;
+    padding: 50px 0 100px 0;
     background-color: #fff;
     .well {
       background-color: #FFF;
