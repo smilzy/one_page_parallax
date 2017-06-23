@@ -88,7 +88,7 @@ h3:not(.h-cv) {
 
 #slide1 {
     width: 100%;
-    background: url('MacBook.jpg') 50% no-repeat fixed;
+    background: url('MacBook_text.jpg') 50% no-repeat fixed;
     background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -118,23 +118,6 @@ h3:not(.h-cv) {
             }
         }
     }
-}
-
-// MAŁE EKRANY (telefon HD)
-// @media (max-width: 1850px) {
-//   #slide1 {
-//     padding: 280px 0 100px 0;
-//   }
-// }
-// @media (max-height: 830px) {
-//   #slide1 {
-//     padding: 280px 0 100px 0;
-//   }
-// }
-@media (max-width: 600px) {
-  #slide1 {
-    padding: 300px 0 0px 0;
-  }
 }
 
 #slide2 {
