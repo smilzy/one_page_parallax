@@ -85,24 +85,32 @@ h3:not(.h-cv) {
 
 #slide1 {
     width: 100%;
-    background: url('ASTRONAUTA.jpg') 50% 0 no-repeat fixed;
+    background: url('MacBook.jpg') 50% no-repeat fixed;
     background-size: cover;
     height: 100%;
     min-height: 100%;
     margin: 0;
-    padding: 150px 0 260px 0;
+    padding: 360px 0 100px 0;
+    z-index: 1;
     .content {
         height: 100%;
         min-height: 100%;
-        .well {
-            background: #000000;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(67,67,67,.8)); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(right, rgba(0,0,0,0), rgba(67,67,67,.8)); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(right, rgba(0,0,0,0), rgba(67,67,67,.8)); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to right, rgba(0,0,0,0), rgba(67,67,67,.8)); /* Standard syntax (must be last) */
-        h3 {
-            color: #FFF;
-        }
+        .screen {
+            position: fixed;
+            left: 0;
+            right: 0;
+            width: 580px;
+            margin: 0 auto;
+            z-index: 1;
+            border: none;
+            h1, h2, h3 {
+                color: #FFF;
+                font-family: 'Dosis';
+            }
+            h1{
+              font-size: 8em;
+              text-transform: uppercase;
+            }
         }
     }
 }
@@ -115,6 +123,8 @@ h3:not(.h-cv) {
     margin: 0;
     padding: 200px 0;
     overflow: hidden;
+    z-index: 2;
+    position: relative;
 }
 
 #slide3 {
@@ -124,6 +134,8 @@ h3:not(.h-cv) {
     height: 800px;
     margin: 0;
     padding: 100px 0 100px 0;
+    z-index: 3;
+    position: relative;
     .blurb {
         border: 2px solid;
         background-color: #fff;
@@ -153,6 +165,8 @@ h3:not(.h-cv) {
     overflow: hidden;
     height: 100%;
     margin: 0;
+    z-index: 4;
+    position: relative;
     .blurb {
         border: 2px solid;
         background-color: #fff;
@@ -163,6 +177,11 @@ h3:not(.h-cv) {
     h2 {
         text-align: center;
     }
+}
+
+#slide-cv {
+  z-index: 5;
+  position: relative;
 }
 
 .carousel .item img, .carousel .item a img {
