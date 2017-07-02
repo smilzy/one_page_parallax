@@ -22,3 +22,7 @@ jQuery(document).ready(function(){
 		},1500);
 	});
 });
+
+$(window).scroll(function(){
+    $(".welcome").css("opacity", 1 - $(window).scrollTop() / 100);
+  });

@@ -1,223 +1,214 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+// *= require_tree .
+// *= require_self@import 'bootstrap-sprockets';
+
+@import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
 html {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    .alert {
-      float: left;
-    }
-}
-
-h1:not(.h-cv) {
-    font-weight: normal;
-    font-size: 55px;
-    text-align: center;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
-
-h2:not(.h-cv) {
-    font-weight: normal;
-    font-size: 40px;
-    text-align: center;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
-
-h3:not(.h-cv) {
-    font-weight: normal;
-//    font-size: 16px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-    position: relative;
-}
-
-// #header {
-//     background-color: gray;
-//     opacity: .7;
-//     width: 100%;
-//     height: 100px;
-//     position: fixed;
-//     margin-top: 30px;
-// }
-
-// #logo {
-//     font-size: 30px;
-//     font-weight: bold;
-//     margin-top: 25px;
-// }
-
-.content {
-    margin: 0 auto;
-    width: 960px;
-}
-
-.blurb-container {
-    width: 800px;
-    margin: 0 auto;
-}
-
-.blurb {
-    font-size: 30px;
-    text-align: left;
-    margin: 50px auto;
-}
-
-#slide1 {
-    width: 100%;
-    background: url('Mac_text.png') 50% no-repeat fixed;
-    background-size: cover;
-    height: 100%;
-    min-height: 100%;
-    margin: 0;
-    padding: 50px 0 100px 0;
-    z-index: 1;
-    .content {
-        height: 100%;
-        min-height: 100%;
-        .welcome h1 {
-          margin: 0 auto;
-          font-size: 8em;
-          font-family: 'Dosis';
-        }
-        .screen {
-            position: fixed;
-            left: 0;
-            right: 0;
-            width: 580px;
+      height: 100%;
+  }
+  
+.portfoliobody {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+  }
+  
+#portfolio {
+  
+  height: 100%;
+      
+  h1:not(.h-cv) {
+      font-weight: normal;
+      font-size: 55px;
+      text-align: center;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+  }
+  
+  h2:not(.h-cv) {
+      font-weight: normal;
+      font-size: 40px;
+      text-align: center;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+  }
+  
+  h3:not(.h-cv) {
+      font-weight: normal;
+  //    font-size: 16px;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      z-index: 1;
+      position: relative;
+  }
+  
+  .content {
+      margin: 0 auto;
+      max-width: 960px;
+  }
+  
+  .blurb-container {
+      width: 800px;
+      margin: 0 auto;
+  }
+  
+  .blurb {
+      font-size: 30px;
+      text-align: left;
+      margin: 50px auto;
+  }
+  
+  #slide1 {
+      width: 100%;
+      background: url('MacBook_text.png') 50% no-repeat fixed;
+      background-size: cover;
+      min-height: 100%;
+      margin: 0;
+      padding: 50px 0 100px 0;
+      z-index: 1;
+      .content {
+          height: 100%;
+          min-height: 100%;
+          .welcome h1 {
             margin: 0 auto;
-            border: none;
-            h1, h2, h3 {
-                color: #FFF;
-                font-family: 'Dosis';
-            }
-            h1{
-              font-size: 8em;
-              text-transform: uppercase;
-            }
-        }
-    }
-}
-
-#slide2 {
-    width: 100%;
-    background-color: #fff;
-    color: #333333;
-    height: 600px;
-    margin: 0;
-    padding: 50px 0;
-    overflow: hidden;
-    z-index: 2;
+            font-size: 8em;
+            font-family: 'Dosis';
+          }
+          .screen {
+              position: fixed;
+              left: 0;
+              right: 0;
+              width: 580px;
+              margin: 0 auto;
+              border: none;
+              h1, h2, h3 {
+                  color: #FFF;
+                  font-family: 'Dosis';
+              }
+              h1{
+                font-size: 8em;
+                text-transform: uppercase;
+              }
+          }
+      }
+  }
+  
+  #slide2 {
+      width: 100%;
+      background-color: #fff;
+      color: #333333;
+      height: 600px;
+      margin: 0;
+      padding: 50px 0;
+      overflow: hidden;
+      z-index: 2;
+      position: relative;
+      .icon {
+        max-width: 10em;
+        margin: 10px auto;
+      }
+      .grow { transition: all .2s ease-in-out; }
+      .grow:hover { transform: scale(1.2); }
+  }
+  
+  #slide3 {
+      width: 100%;
+      background: url('WorkStation.jpg') 50% 0 no-repeat fixed;
+      background-size: cover;
+      height: 800px;
+      margin: 0;
+      padding: 100px 0 100px 0;
+      z-index: 3;
+      position: relative;
+      .blurb {
+          border: 2px solid;
+          background-color: #fff;
+          border-radius: 5px;
+          padding: 50px 20px 50px 20px;
+          color: black;
+      }
+      .well {
+          background: #000000;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(67,67,67,.8)); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(right, rgba(0,0,0,0), rgba(67,67,67,.8)); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(right, rgba(0,0,0,0), rgba(67,67,67,.8)); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(to right, rgba(0,0,0,0), rgba(67,67,67,.8)); /* Standard syntax (must be last) */
+          border: 0px;
+      }
+      h1 {
+          font-family: 'Righteous';
+          text-align: center;
+          color: #FFF;
+      }
+  }
+  
+  #slide4 {
+      width: 100%;
+      height: 620px;
+      margin: 0;
+      background-color: #fff;
+      color: #333333;
+      overflow: hidden;
+      margin: 0;
+      z-index: 4;
+      position: relative;
+      padding: 50px 0 100px 0;
+      background: #304352;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to top, #d7d2cc, #FFF);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to top, #d7d2cc, #FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+      .well {
+        background-color: #FFF;
+      }
+      textarea {
+        resize: vertical;
+        max-height: 200px;
+      }
+      h2 {
+          text-align: center;
+      }
+      .alert {
+        float: default;
+      }
+  }
+  
+  #slide-cv {
+    z-index: 5;
     position: relative;
-    .icon {
-      max-width: 10em;
-      margin: 10px;
-    }
-    .grow { transition: all .2s ease-in-out; }
-    .grow:hover { transform: scale(1.2); }
+  }
+  
+  .carousel .item img, .carousel .item a img {
+    max-height: 500px;
+    max-width: 960;
+    height: 500px;
+    min-width: auto;
+    // width: 100%;
+  }
+  
+  .carousel-indicators .active{
+      background-color: #f00;
+  }
+  
+  .carousel-indicators li{
+  //    border-color: #f00;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(96, 96, 96, 0.65);
+  }
 }
 
-#slide3 {
-    width: 100%;
-    background: url('WorkStation.jpg') 50% 0 no-repeat fixed;
-    background-size: cover;
-    height: 800px;
-    margin: 0;
-    padding: 100px 0 100px 0;
-    z-index: 3;
-    position: relative;
-    .blurb {
-        border: 2px solid;
-        background-color: #fff;
-        border-radius: 5px;
-        padding: 50px 20px 50px 20px;
-        color: black;
-    }
-    .well {
-        background: #000000;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(67,67,67,.8)); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(right, rgba(0,0,0,0), rgba(67,67,67,.8)); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(right, rgba(0,0,0,0), rgba(67,67,67,.8)); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to right, rgba(0,0,0,0), rgba(67,67,67,.8)); /* Standard syntax (must be last) */
-        border: 0px;
-    }
-    h1 {
-        font-family: 'Righteous';
-        text-align: center;
-        color: #FFF;
-    }
-}
-
-#slide4 {
-    width: 100%;
-    height: 620px;
-    margin: 0;
-    background-color: #fff;
-    color: #333333;
-    overflow: hidden;
-    margin: 0;
-    z-index: 4;
-    position: relative;
-    padding: 50px 0 100px 0;
-    background: #304352;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #d7d2cc, #FFF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #d7d2cc, #FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    .well {
-      background-color: #FFF;
-    }
-    textarea {
-      resize: vertical;
-      max-height: 200px;
-    }
-    h2 {
-        text-align: center;
-    }
-}
-
-#slide-cv {
-  z-index: 5;
-  position: relative;
-}
-
-.carousel .item img, .carousel .item a img {
-  max-height: 500px;
-  height: 500px;
-  min-width: auto;
-  width: 100%;
-}
-
-.carousel-indicators .active{
-    background-color: #f00;
-}
-
-.carousel-indicators li{
-//    border-color: #f00;
-}
-
-.carousel-caption {
-   background-color: rgba(96, 96, 96, 0.65);
+// Niewyświetlanie alertów u góry ekranu
+#flash-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    // width: 100%;
+    display: none;
 }
